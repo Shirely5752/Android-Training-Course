@@ -5,28 +5,30 @@ Welcome to the Maritime Dashboard repository, a comprehensive android-based inte
 ## About Navelink
 Navelink, a non-profit consortium initiated by Kongsberg, Saab, and Wärtsilä in December 2019, now owned by Kongsberg and Wärtsilä, governed by Combitech, serves the maritime sector with a secure digital information exchange infrastructure. Operating as an instance of the Maritime Connectivity Platform (MCP), Navelink offers specialized Identity and Service Registries for maritime use. By advocating global data exchange standards, it equips organizations for the digital future. Navelink addresses the challenge of fragmented information exchange by providing standardized procedures, promoting cost-effective and secure digital data sharing. It simplifies authentication and offers a central hub for discovering and accessing maritime services.
 
-### Features of Application
 
-**Grade 3 Features**:
+# Application Features
 
-- User logons to the Android application.
-- User searches/gets services.
-- App displays service textual description, addon data, graphical coverage area, and service provider position.
-- User may download and read attached documents.
+## Grade 3 Features:
 
-**Grade 4 Features**:
+- **User Login**: Users can log in to the Android application.
+- **Service Search**: Users can search for and retrieve services.
+- **Service Display**: The app displays service descriptions, additional data, graphical coverage areas, and service provider positions.
+- **Document Access**: Users can download and read attached documents.
 
-- User edits service textual description, addon data, graphical coverage area, and service provider position.
-- User can rename or delete their own files or downloaded files.
-- Error alert for incorrect file formats.
+## Grade 4 Features:
 
-**Grade 5 Features**:
+- **Service Editing**: Users have the ability to edit service descriptions, additional data, graphical coverage areas, and service provider positions.
+- **File Management**: Users can rename or delete their own files or downloaded files.
+- **File Format Error Alert**: The system displays an error alert for incorrect file formats.
 
-- User uploads documents and images for the service.
-- Writing to Service Registry requires security login and X.509 certificate (security feature).
-- Updating notification from followed clients or service organizations.
-- Search information by client's ID or company/organization name.
-- Filter search results by various file formats (PDF, .gpx, etc.).
+## Grade 5 Features:
+
+- **File Upload**: Users can upload documents and images for the service.
+- **Security Login**: Writing to the Service Registry requires secure login and X.509 certificate (security feature).
+- **Update Notifications**: Users receive notifications when followed clients or service organizations make updates.
+- **Information Search**: Users can search for information using client IDs or company/organization names.
+- **File Format Filtering**: Users can filter search results by various file formats, including PDF, .gpx, and more.
+
 
 Technologies Used
 Frontend: Kotlin
