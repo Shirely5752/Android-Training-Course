@@ -1,8 +1,7 @@
-# Maritime Dashboard Project
+# Navallink Dashboard
 
 Welcome to the Maritime Dashboard repository, a comprehensive web-based interface designed to streamline data compilation, visualization, and administration within the maritime sector. This dashboard is developed using Kotlin for the backend and provides a user-friendly experience for both general users and administrators.
 
-## Features
 
 ### Basic Functions
 
@@ -42,7 +41,7 @@ Welcome to the Maritime Dashboard repository, a comprehensive web-based interfac
 
 6. **Multi-platform Support**: Develops applications supporting multiple platforms (mobile app, Web, desktop) for navigation tools accessibility on different devices.
 
-### Features in the PPT
+### Features of Application
 
 **Grade 3 Features**:
 
