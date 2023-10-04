@@ -4,36 +4,81 @@ Welcome to the Maritime Dashboard repository, a comprehensive web-based interfac
 
 ## Features
 
-### User Features
+### Basic Functions
 
-- **Dashboard Design**: An intuitive and responsive web interface that facilitates easy navigation and effective data visualization.
-- **Real-time Updates**: Keep your data up-to-date with real-time information retrieval, ensuring users always have access to the latest maritime data.
-- **Customization**: Tailor the dashboard to your preferences, allowing users to customize their experience based on their specific needs.
+1. **Marine Obstacle Detection**: Real-time monitoring of marine obstacles, including buoys, reefs, and other vessels, ensuring navigation safety. Technologies: JS, PYTHON, Navigation Algorithm, HTTP, UI. Steps: Data source acquisition, data processing.
 
-### Admin Features
+2. **Navigation Path Planning**: Calculates the best navigation path based on target and current locations, avoiding dangerous areas and obstacles.
 
-- **Admin Panel**: Administrators gain access to a comprehensive set of tools and functions:
-  - **File Management**: Efficiently upload, manage, and organize files and documents related to maritime operations.
-  - **Profile Updates**: Seamlessly update user profiles, permissions, and settings.
-  - **Data Management**: Manage and manipulate data sources within the dashboard.
-  - **User Management**: Admins have full control to add, remove, or modify user accounts and access levels.
-  - **System Configuration**: Easily adjust system settings and configurations as needed.
+3. **GPS Integration**: Utilizes GPS data for precise vessel positioning, supporting navigation and position tracking.
 
-## Additional Navelink Information
+4. **Real-time Map Display**: Displays ship's position, surrounding environment, and navigation path in real-time, aiding crew understanding of the sea situation.
 
-### Identity Registry
+5. **Alert and Notification System**: Provides warnings, hazardous situation alerts, and navigational advice, ensuring quick crew response.
 
-Navelink's Identity Registry provides a higher level of security for digital communication within the maritime sector. It issues unique identity certificates to members, allowing them to verify their identity and sign sensitive communication. This ensures both the sender and receiver of information feel safe knowing they are communicating with the intended party. The Identity Registry complies with authority regulations, recommendations, and follows global data format standards compatible with pre-existing equipment.
+6. **System Integration**: Integrates with internal warning solutions and navigation systems, enabling data sharing and collaboration.
 
-### Service Registry
+### Advanced Functionality
 
-Navelink's Service Registry offers convenient access to maritime services on a common digital platform. It serves as a major enabler for service developers and consumers to connect with each other, benefitting both parties by gathering services in one place. Standardized data formats ensure compatibility with ECDIS and interoperability with other services. Approximately 80 operational services are available, including ship services, navigational warnings, VTS services, port, and pilot services.
+1. **Radar and Sensor Integration**: Integrates radar and sensor data to enhance environmental perception, including weather conditions and sea state.
 
-### Navelink's Symbol
+2. **Autopilot Support**: Offers autopilot features for autonomous navigation, adjusting to changing conditions.
 
-Navelink's symbol is a triangle with rounded edges and vaulted sides, standing on one of its tips. A circle is placed in the middle of each vaulted side, with a dotted line extending from each circle towards the triangle's center. The shape evokes the idea of a ship hull cross-section and a shield, symbolizing the maritime sector and safety. The dotted lines represent network nodes.
+3. **Channel Planning and Optimization**: Provides advanced channel planning considering maritime traffic and hydrological conditions, ensuring optimal and safe routes.
 
-### Scalable for the Future
+4. **Remote Monitoring and Support**: Allows remote monitoring of navigation and performance for remote technical support.
 
-Navelink is scalable, allowing organizations of all sizes to enroll. Currently, around 16 organizations, including ship operators, maritime administrations, logistics companies, and port actors, are connected. Contact us to learn more about joining this group of future-oriented maritime actors and shaping the maritime domain's future.
+### Additional Features
+
+1. **Historical Track Recording**: Records and stores the ship's historical navigation track for analysis and review.
+
+2. **Crew Communication**: Integrated real-time communication tools for crew and ground support teams and other vessels.
+
+3. **Custom Alert Settings**: Enables users to customize alerts and notifications based on specific sailing needs.
+
+4. **Data Analysis and Reporting**: Provides tools for data analysis, generating reports on navigation performance and obstacle avoidance history.
+
+5. **Machine Learning Prediction**: Utilizes machine learning algorithms to predict sea states, obstacle locations, and navigation recommendations.
+
+6. **Multi-platform Support**: Develops applications supporting multiple platforms (mobile app, Web, desktop) for navigation tools accessibility on different devices.
+
+### Features in the PPT
+
+**Grade 3 Features**:
+
+- User logons to the Android application.
+- User searches/gets services.
+- App displays service textual description, addon data, graphical coverage area, and service provider position.
+- User may download and read attached documents.
+
+**Grade 4 Features**:
+
+- User edits service textual description, addon data, graphical coverage area, and service provider position.
+- User can rename or delete their own files or downloaded files.
+- Error alert for incorrect file formats.
+
+**Grade 5 Features**:
+
+- User uploads documents and images for the service.
+- Writing to Service Registry requires security login and X.509 certificate (security feature).
+- Updating notification from followed clients or service organizations.
+- Search information by client's ID or company/organization name.
+- Filter search results by various file formats (PDF, .gpx, etc.).
+
+Technologies Used
+Frontend: Kotlin
+Backend: Kotlin
+API Integration: Axios
+Database: MongoDB (optional, if applicable)
+Contribution
+We appreciate contributions from the community. If you'd like to contribute to this project, please refer to our contribution guidelines.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+If you have any questions, feedback, or suggestions, please don't hesitate to contact us 
+
+Thank you for being a part of this project! Happy coding!
+
 
