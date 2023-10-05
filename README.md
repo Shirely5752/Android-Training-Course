@@ -8,20 +8,20 @@ Navelink, a non-profit consortium initiated by Kongsberg, Saab, and Wärtsilä i
 
 # Application Features
 
-## Grade 3 Features:
+## Basic Features:
 
 - **User Login**: Users can log in to the Android application.
 - **Service Search**: Users can search for and retrieve services.
 - **Service Display**: The app displays service descriptions, additional data, graphical coverage areas, and service provider positions.
 - **Document Access**: Users can download and read attached documents.
 
-## Grade 4 Features:
+## Advanced Features:
 
 - **Service Editing**: Users have the ability to edit service descriptions, additional data, graphical coverage areas, and service provider positions.
 - **File Management**: Users can rename or delete their own files or downloaded files.
 - **File Format Error Alert**: The system displays an error alert for incorrect file formats.
 
-## Grade 5 Features:
+## 'Challenging to implement' Features:
 
 - **File Upload**: Users can upload documents and images for the service.
 - **Security Login**: Writing to the Service Registry requires secure login and X.509 certificate (security feature).
