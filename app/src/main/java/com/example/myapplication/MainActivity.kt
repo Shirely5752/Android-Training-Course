@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.BottomAppBar
@@ -37,11 +38,14 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -89,6 +93,7 @@ fun getServices(callback: (List<Service>?) -> Unit){
                         Log.i(ContentValues.TAG, "onResponse: ID: ${service.id}")
                         Log.i(ContentValues.TAG, "onResponse: Name: ${service.name}")
                         Log.i(ContentValues.TAG, "onResponse: Keywords: ${service.keywords}")
+                        Log.i(ContentValues.TAG, "onResponse: Geometry: ${service.geometry}")
                     }
                 }
                 callback(serviceList)
@@ -120,6 +125,8 @@ fun LoadServices(){
 
 @Composable
 fun ServicesWindow(services: List<Service>){
+    val serviceStates = remember { mutableStateMapOf<Int, Boolean>() }
+
     Card(
         colors = CardDefaults.cardColors(
             containerColor = MaterialTheme.colorScheme.surfaceVariant,
@@ -140,12 +147,21 @@ fun ServicesWindow(services: List<Service>){
                         horizontalAlignment = Alignment.CenterHorizontally,
                         modifier = Modifier.fillMaxWidth()
                     ) {
+                        // Get the state for the current service
+                        val showServiceInfo = serviceStates[service.id] ?: false
+
                         //title
-                        Text(
-                            text = service.name,
-                            fontWeight = FontWeight.Bold,
-                            fontSize = 20.sp
-                        )
+                        Button(onClick = {serviceStates[service.id] = !showServiceInfo}){
+                            Text(
+                                text = service.name ,
+                                fontWeight = FontWeight.Bold,
+                                fontSize = 20.sp
+                            )
+                        }
+                        if(showServiceInfo){
+                            Text(text = service.keywords)
+                        }
+
                     }
                 }
             }
