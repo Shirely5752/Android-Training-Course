@@ -54,17 +54,17 @@ class LoginViewModel : ViewModel() {
     }
 
     fun onLoginClick(onLoginResult: (Boolean, String?) -> Unit) {
-        // 获取用户输入的邮箱和密码
+        // get users' email and passwords
         val email = username
         val userPassword = password
 
-        // 调用登录逻辑
+        // Call login logic
         performLogin(email, userPassword) { success, errorMessage ->
             if (success) {
-                // 登录成功，执行成功后的操作
+                // success log in，operation after successful execution
                 onLoginResult(true, null)
             } else {
-                // 登录失败，显示错误消息或执行失败后的操作
+                // failed log in，display an error message or perform an action after a failure
                 onLoginResult(false, errorMessage)
             }
         }
@@ -103,11 +103,11 @@ fun LoginScreen(viewModel: LoginViewModel,navController: NavHostController) {
         )
         Button(onClick = { viewModel.onLoginClick { success, errorMsg ->
             if (success) {
-                // 登录成功，执行成功后的操作，例如导航到下一个界面
+                // Log in successfully, perform the operations after success, and navigate to the next interface.
                 navController.navigate("HomeScreen")
             } else {
-                // 登录失败，显示错误消息或执行失败后的操作
-                // errorMessage 包含登录失败的错误消息
+                // Login fails, displays error message or performs actions after failure
+                //
                 errorMessage = errorMsg ?: "Login failed"
             }
         } }) {
@@ -127,10 +127,10 @@ fun performLogin(email: String, password: String, onLoginResult: (Boolean, Strin
     auth.signInWithEmailAndPassword(email, password)
         .addOnCompleteListener { task ->
             if (task.isSuccessful) {
-                // 登录成功
+                // login success
                 onLoginResult(true, null)
             } else {
-                // 登录失败
+                // login fails
                 val errorMessage = task.exception?.message
                 onLoginResult(false, errorMessage)
             }

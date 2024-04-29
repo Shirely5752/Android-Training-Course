@@ -58,7 +58,8 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-}
+}//main initializes the new navigation control in firebase content,
+//By default, navigation prioritizes the login page, and logs in to the homescreen.
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
 fun MyApp(nav:NavHostController) {

@@ -1,0 +1,5 @@
+Intro: My basic task is to implement a basic login function. Due to the limited database conditions, our APP is a software with high privacy requirements. After weighing many problems, I simply use Firebase's authentication function to verify the user's user name and password. Therefore, the account password is issued by the company to ensure security.
+
+Main code explaination:
+Main initializes a new navigation control in firebase content.
+Navigate to the default login page, and login to homescreen.

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579027232627",
+    "project_id": "log-on-a412f",
+    "storage_bucket": "log-on-a412f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579027232627:android:e7837b721a67407a304706",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaQAUDn0yAjMux6iVrNNAwy09OoIN8QRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
